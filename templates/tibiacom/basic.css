@@ -1,21 +1,23 @@
 body {
-  margin: 0px;
-  padding:  0px;
+  margin: 0;
+  padding: 0;
   background-color: #051122;
+
+  background-image: url('images/header/background-artwork.jpg');
+  height: 100%;
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 img {
-	border: none;
+  border: none;
 }
 
 #ArtworkHelper {
   text-align: center;
-  background-position: top center;
-  background-attachment: scroll;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  min-width: 1000px;
 }
 
 /* container to implement min/max width */
@@ -50,7 +52,7 @@ img {
   width: 180px;
   margin-right: 15px;
   margin-left: 15px;
-  padding: 0px;
+  padding-bottom: 20px;
   font-family:  Arial, sans-serif;
   font-size: 10pt;
   font-weight: bold;
@@ -183,12 +185,12 @@ img {
 
 #PedestalAndOnline {
   position: absolute;
-  top: -105px;
+  top: -59px;
   width: 132px;
-  height: 111px;
+  height: 65px;
 }
 
-#RightArtwork #PlayersOnline {
+#PlayersOnline {
   font-family : Verdana, Arial, Times New Roman, sans-serif;
   font-size: 7pt;
   line-height: 8pt;
@@ -198,7 +200,6 @@ img {
   bottom: 11px;
   left: 21px;
   color: #cfa600;
-  border-bottom: 1px solid #010101;
   cursor: pointer;
 }
 

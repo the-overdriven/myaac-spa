@@ -273,16 +273,23 @@ if(isset($config['boxes']))
 	</script>
 	<?php } ?>
   <div id="top"></div>
-  <div id="ArtworkHelper" style="background-image:url(<?php echo $template_path; ?>/images/header/<?php echo $config['background_image']; ?>);" >
+  <div id="ArtworkHelper" >
     <div id="Bodycontainer">
       <div id="ContentRow">
         <div id="MenuColumn">
           <div id="LeftArtwork">
             <img id="Statue_1" src="<?php echo $template_path; ?>/images/header/animated-statue.gif" alt="logoartwork" />
             <img id="TibiaLogoArtworkTop" src="<?php echo $template_path; ?>/images/header/<?php echo $config['logo_image']; ?>" onClick="window.location = '<?php echo getLink('news')?>';" alt="logoartwork" />
-            <img id="TibiaLogoArtworkBottom" src="<?php echo $template_path; ?>/images/header/tibia-logo-artwork-bottom.gif" alt="logoartwork" />
-            <img id="Statue_2" src="<?php echo $template_path; ?>/images/header/animated-statue.gif" alt="logoartwork" />
-            <img id="LogoLink" src="<?php echo $template_path; ?>/images/header/tibia-logo-artwork-string.gif" onClick="window.location = 'mailto:<?php echo $config['mail_address']; ?>';" alt="logoartwork" />
+
+	          <a id="TibiaLogoArtworkBottom" href="?serverInfo" style="position:relative">
+		          <img src="<?php echo $template_path; ?>/images/header/tibia-logo-artwork-bottom.gif"
+		               alt="logoartwork"/>
+		          <div style="position: absolute; top:-22px; left:39px; color:#4b7874; width:93px; text-align:center">
+		            Server Info
+			      </div>
+	          </a>
+
+	          <img id="Statue_2" src="<?php echo $template_path; ?>/images/header/animated-statue.gif" alt="logoartwork" />
           </div>
 
   <div id="Loginbox" >
@@ -407,12 +414,11 @@ foreach($config['menu_categories'] as $id => $cat) {
   </div>
            </div>
           </div>
-          <div id="Footer"><?php echo template_footer(); ?><br/>Layout by CipSoft GmbH.</div>
+          <div id="Footer"><?php echo template_footer(); ?></div>
         </div>
         <div id="ThemeboxesColumn">
           <div id="RightArtwork">
-            <img id="Monster" src="images/monsters/<?php echo logo_monster() ?>.gif" onClick="window.location = '?subtopic=creatures&creature=<?php echo $config['logo_monster'] ?>';" alt="Monster of the Week" />
-            <img id="PedestalAndOnline" src="<?php echo $template_path; ?>/images/header/pedestal-and-online.gif" alt="Monster Pedestal and Players Online Box"/>
+            <img id="PedestalAndOnline" src="<?php echo $template_path; ?>/images/header/pedestal-and-online.png" alt="Monster Pedestal and Players Online Box"/>
           <div id="PlayersOnline" onClick="window.location = '<?php echo getLink('online'); ?>'">
 		  <?php
 			if($status['online'])
@@ -434,9 +440,6 @@ foreach($config['menu_categories'] as $id => $cat) {
 				<?php
 				}
 			}
-
-	if($config['template_allow_change'])
-		 echo '<span style="color: white">Template:</span><br/>' . template_form();
  ?>
         </div>
       </div>

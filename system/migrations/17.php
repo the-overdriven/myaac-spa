@@ -54,7 +54,7 @@ INSERT INTO `myaac_menu` (`template`, `name`, `link`, `category`, `ordering`) VA
 INSERT INTO `myaac_menu` (`template`, `name`, `link`, `category`, `ordering`) VALUES ('tibiacom', 'News Archive', 'news/archive', 1, 1);
 INSERT INTO `myaac_menu` (`template`, `name`, `link`, `category`, `ordering`) VALUES ('tibiacom', 'Changelog', 'changelog', 1, 2);
 /* MENU_CATEGORY_ACCOUNT tibiacom */
-INSERT INTO `myaac_menu` (`template`, `name`, `link`, `category`, `ordering`) VALUES ('tibiacom', 'Account Management', 'account/manage', 2, 0);
+INSERT INTO `myaac_menu` (`template`, `name`, `link`, `category`, `ordering`) VALUES ('tibiacom', 'My Account', 'account/manage', 2, 0);
 INSERT INTO `myaac_menu` (`template`, `name`, `link`, `category`, `ordering`) VALUES ('tibiacom', 'Create Account', 'account/create', 2, 1);
 INSERT INTO `myaac_menu` (`template`, `name`, `link`, `category`, `ordering`) VALUES ('tibiacom', 'Lost Account?', 'account/lost', 2, 2);
 INSERT INTO `myaac_menu` (`template`, `name`, `link`, `category`, `ordering`) VALUES ('tibiacom', 'Server Rules', 'rules', 2, 3);

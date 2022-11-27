@@ -9,7 +9,7 @@
  * @link      https://my-aac.org
  */
 defined('MYAAC') or die('Direct access not allowed!');
-$title = 'Account Management';
+$title = 'My Account';
 
 if($config['account_country'])
 	require SYSTEM . 'countries.conf.php';
